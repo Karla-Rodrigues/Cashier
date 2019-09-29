@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Product>
+
+    @{
+        ViewData["Title"] = "Stock";
+    }
+
+    <h1 style="position: absolute; left: 80px; top: -25px"> STOCK </h1>
+
+    <table class="Table4" style="position: absolute; left: 80px; top: 80px">
+        <thead>
+            <tr class="darkRow">
+                <th> Supplier </th>
+                <th> Stock </th>
+                <th> Code </th>
+                <th> Name </th>
+                <th> Category </th>
+                <th> Cost </th>
+                <th> Price </th>
+                <th> Discount </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="lightRow">
+                    <td> @Html.DisplayFor(modelItem => item.ProdSupplier) </td>
+                    <td> @Html.DisplayFor(modelItem => item.ProdStock) </td>
+                    <td> @Html.DisplayFor(modelItem => item.ProdCode) </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProdShort)
+                        @Html.DisplayFor(modelItem => item.ProdLong)
+                    </td>
+                    <td> @Html.DisplayFor(modelItem => item.ProdCategory) </td>
+                    <td> @Html.DisplayFor(modelItem => item.ProdCost) </td>
+                    <td> @Html.DisplayFor(modelItem => item.ProdRetail) </td>
+                    <td> @Html.DisplayFor(modelItem => item.ProdDiscount) </td>
+                </tr>
+            }
+        </tbody>
+    </table>

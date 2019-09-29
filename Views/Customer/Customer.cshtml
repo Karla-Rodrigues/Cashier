@@ -1,0 +1,36 @@
+﻿@model Cashier.Models.Customer
+
+@{
+    ViewData["Title"] = "Customer";
+}
+
+<h1 style="position: absolute; left: 80px; top: -25px"> CUSTOMER DETAILS </h1>
+
+<table class="Table4" style="position: absolute; left: 80px; top: 80px">
+    <tbody>
+        <tr class="lightRow">
+            <th> Id </th>
+            <td> @Html.DisplayFor(model => model.CustId)  </td>
+        </tr>
+        <tr class="lightRow">
+            <th> Name </th>
+            <td> @Html.DisplayFor(model => model.CustFirstName)  </td>
+        </tr>
+        <tr class="lightRow">
+            <th> Surname </th>
+            <td> @Html.DisplayFor(model => model.CustLastName)  </td>
+        </tr>
+        <tr class="lightRow">
+            <th> E-Mail </th>
+            <td> @Html.DisplayFor(model => model.CustEmail)  </td>
+        </tr>
+        <tr class="lightRow">
+            <th> Phone </th>
+            <td> @Html.DisplayFor(model => model.CustPhone)  </td>
+        </tr>
+    </tbody>
+</table>
+
+<form method="get" asp-controller="Customer" style="position: absolute; left: 500px; top: 300px">
+    <button class="button" asp-action="List" type="submit">List</button>
+</form>

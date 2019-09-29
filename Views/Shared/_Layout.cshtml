@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<!-- Created by Karla Rodrigues - Created on July 24, 2019-->
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ECommerce</title>
+    <meta content="Cashier DataBase Centennial College" name="keywords" />
+    <meta content="Cashier * Project Advanced DataBase Class - Centennial College" name="description" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" asp-append-version="true" />
+</head>
+<body>
+    <!--ALLPAGE-->
+    <div id="AllPage">
+        <!--BANNER-->
+        <div id="Banner" style="position: absolute; left: -150px; top: 0px; width: 1300px; height: 80px; z-index: 1" class="auto-style1">
+            <banner>
+                <h1>Cashier</h1>
+                <h4>&copy;&nbsp;Copyright Karla Adauto Rodrigues - Assignment COMP214-002 - Summer/2019</h4>
+
+                <menuban style="position: absolute; left: 400px; top: 45px">
+                    <a asp-controller="Home" asp-action="Index">Cashier</a> |
+                    <a asp-controller="Home" asp-action="Account">Account</a> |
+                    <a asp-controller="Product" asp-action="Stock">Stock</a> |
+                    <a asp-controller="Order" asp-action="Order">Orders</a> |
+                    <a asp-controller="Product" asp-action="List">Products</a> |
+                    <a asp-controller="Customer" asp-action="List">Customers</a>
+                </menuban>
+
+                <!--CONTENT-->
+                <!-- #BeginEditable "Content" -->
+                <div id="Content" style="position: absolute; left: -1px; top: 95px; width: 1300px; height: 640px; z-index: 4" class="auto-style1">
+                    <content>
+                        @RenderBody()
+                    </content>
+                </div>
+        </div><!-- #EndEditable -->
+    </div><!-- AllPages-->
+</body>
+</html>
+

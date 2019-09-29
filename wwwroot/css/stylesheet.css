@@ -1,0 +1,370 @@
+﻿body {
+    background: #888472 none no-repeat fixed center top; /* grey */
+}
+
+#AllPage {
+    margin: auto;
+    width: 980px;
+    top: 0px;
+    position: relative;
+    right: 0px;
+}
+
+.img-style {
+    border-style: solid;
+    border-width: 5px;
+    margin: 5px;
+}
+
+.button {
+    background-color: #ff6a00; /* orange */
+    color: #0b5a27; /* green */
+    padding: 12px 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 4px;
+}
+
+    .button:hover {
+        background-color: #0b5a27; /* green */
+        color: #ff6a00; /* orange */
+        padding: 12px 28px;
+        text-align: center;
+        display: inline-block;
+        font-size: 25px;
+        border-radius: 4px;
+    }
+
+.button2 {
+    background-color: #0b5a27; /* green */
+    color: #ff6a00; /* orange */
+    padding: 12px 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 4px;
+}
+
+    .button2:hover {
+        background-color: #ff6a00; /* orange */
+        color: #0b5a27; /* green */
+        padding: 12px 28px;
+        text-align: center;
+        display: inline-block;
+        font-size: 25px;
+        border-radius: 4px;
+    }
+
+#Banner {
+    border: 6px solid #948473;
+    background-color: #FFE3C6;
+    width: 50%;
+    text-align: center;
+    border: 6px solid #0b5a27; /* green */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-image: none;
+    background-repeat: no-repeat;
+    color: #0b5a27; /* green */
+    background-position: right center;
+    background-color: #ff6a00; /* orange */
+    border-radius: 5px;
+}
+
+banner h1 {
+    font-size: 40px;
+    position: absolute;
+    vertical-align: top;
+    text-align: left;
+    width: 600px;
+    top: -25px;
+    left: 20px;
+}
+
+banner h4 {
+    font-size: 5px;
+    position: absolute;
+    vertical-align: top;
+    text-align: left;
+    width: 600px;
+    top: -25px;
+    left: 200px;
+}
+
+banner a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #0b5a27; /* green */
+    padding: 8px;
+    margin-left: 30px;
+}
+
+    banner a:hover {
+        font-size: 25px;
+        color: #ff6a00; /* orange */
+        background-color: #0b5a27; /* green */
+    }
+
+#Content {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EAEAEA;
+    background-image: none;
+    background-repeat: no-repeat;
+    color: #000000; /* black */
+    background-position: right center;
+    border-radius: 5px;
+}
+
+content h1 {
+    font-size: 50px;
+    text-decoration: none;
+    padding: 2px;
+    margin-left: 30px;
+}
+
+content h3 {
+    color: #0b5a27; /* green */
+    font-size: 40px;
+    text-decoration: none;
+    padding: 2px;
+    margin-left: 30px;
+}
+
+content h4 {
+    font-size: 30px;
+    text-decoration: none;
+    padding: 2px;
+    margin-left: 30px;
+}
+
+content p {
+    font-size: 15px;
+    text-decoration: none;
+    padding: 2px;
+    margin-left: 30px;
+}
+
+content h9 {
+    font-size: 10px;
+    text-decoration: none;
+    padding: 2px;
+    margin-left: 30px;
+}
+
+content a {
+    text-decoration: none;
+    padding: 8px;
+    margin-left: 30px;
+}
+
+    content a:hover {
+        color: #4C4C4C;
+        background-color: #fcf1c4;
+    }
+
+
+
+content table {
+    border-radius: 6px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #0f7533; /* green */
+    padding: 2px;
+    font-size: 20px;
+    right: 180px;
+    border-spacing: 3px;
+    empty-cells: show;
+    table-layout: auto;
+}
+
+table.Table2 {
+    border: 6px solid #888472;
+    background-color: #FFE3C6;
+    width: 50%;
+    text-align: center;
+}
+
+    table.Table2 td, table.Table2 th {
+        border: 1px solid #948473;
+        padding: 4px 4px;
+    }
+
+    table.Table2 tbody td {
+        font-size: 13px;
+    }
+
+    table.Table2 thead {
+        background: #948473;
+        background: -moz-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+        background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+        background: linear-gradient(to bottom, #afa396 0%, #9e9081 66%, #948473 100%);
+    }
+
+        table.Table2 thead th {
+            font-size: 17px;
+            font-weight: bold;
+            color: #F0F0F0;
+            text-align: left;
+            border-left: 1px solid #948473;
+        }
+
+            table.Table2 thead th:first-child {
+                border-left: none;
+            }
+
+    table.Table2 tfoot {
+        font-size: 16px;
+        font-weight: bold;
+        color: #F0F0F0;
+        background: #948473;
+        background: -moz-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+        background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+        background: linear-gradient(to bottom, #afa396 0%, #9e9081 66%, #948473 100%);
+    }
+
+        table.Table2 tfoot td {
+            font-size: 16px;
+        }
+
+table.Table3 {
+    border: 8px solid #888472;
+    background-color: #FFE3C6;
+    width: 40%;
+    text-align: center;
+}
+
+    table.Table3 td, table.cinereousTable th {
+        border: 1px solid #948473;
+        padding: 4px 4px;
+    }
+
+    table.Table3 tbody td {
+        font-size: 12px;
+    }
+
+    table.Table3 thead {
+        background: #948473;
+        background: -moz-linear-gradient(top, #afa396 0%, #9e9081 50%, #948473 60%);
+        background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 50%, #948473 60%);
+        background: linear-gradient(to bottom, #afa396 0%, #9e9081 50%, #948473 60%);
+    }
+
+        table.Table3 thead th {
+            font-size: 16px;
+            font-weight: bold;
+            color: #F0F0F0;
+            text-align: left;
+            border-left: 1px solid #948473;
+        }
+
+            table.Table3 thead th:first-child {
+                border-left: none;
+            }
+
+    table.Table3 tfoot {
+        font-size: 16px;
+        font-weight: bold;
+        color: #F0F0F0;
+        background: #948473;
+        background: -moz-linear-gradient(top, #afa396 0%, #9e9081 50%, #948473 60%);
+        background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 50%, #948473 60%);
+        background: linear-gradient(to bottom, #afa396 0%, #9e9081 50%, #948473 60%);
+    }
+
+        table.Table3 tfoot td {
+            font-size: 16px;
+        }
+
+table.Table4 {
+    border: 8px solid #888472;
+    background-color: #FFE3C6;
+    width: 90%;
+    text-align: center;
+}
+
+    table.Table4 td, table.cinereousTable th {
+        border: 1px solid #948473;
+        padding: 4px 4px;
+    }
+
+    table.Table4 tbody td {
+        font-size: 12px;
+    }
+
+    table.Table4 thead {
+        background: #948473;
+        background: -moz-linear-gradient(top, #afa396 0%, #9e9081 50%, #948473 60%);
+        background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 50%, #948473 60%);
+        background: linear-gradient(to bottom, #afa396 0%, #9e9081 50%, #948473 60%);
+    }
+
+        table.Table4 thead th {
+            font-size: 16px;
+            font-weight: bold;
+            color: #F0F0F0;
+            text-align: left;
+            border-left: 1px solid #948473;
+        }
+
+            table.Table4 thead th:first-child {
+                border-left: none;
+            }
+
+    table.Table4 tfoot {
+        font-size: 16px;
+        font-weight: bold;
+        color: #F0F0F0;
+        background: #948473;
+        background: -moz-linear-gradient(top, #afa396 0%, #9e9081 50%, #948473 60%);
+        background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 50%, #948473 60%);
+        background: linear-gradient(to bottom, #afa396 0%, #9e9081 50%, #948473 60%);
+    }
+
+        table.Table4 tfoot td {
+            font-size: 16px;
+        }
+
+.lightRow {
+    font-family: Trebuchet MS;
+    background: #b9b5a0;
+    color: #000000;
+}
+
+.darkRow {
+    font-family: Trebuchet MS;
+    background: #888472;
+    color: #000000;
+}
+
+.but-tab {
+    background-color: #0b5a27; /* green */
+    color: #ff6a00; /* orange */
+    padding: 8px 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 11px;
+    border-radius: 2px;
+}
+
+    .but-tab:hover {
+        background-color: #ff6a00; /* orange */
+        color: #0b5a27; /* green */
+        padding: 8px 28px;
+        text-align: center;
+        display: inline-block;
+        font-size: 11px;
+        border-radius: 2px;
+    }
+
+.total {
+    font-family: Trebuchet MS;
+    background: #808080;
+    color: #000000;
+    font-size: 36px;
+}
+
+
+content img {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    float: right;

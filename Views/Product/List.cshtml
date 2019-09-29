@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1 style="position: absolute; left: 80px; top: -25px"> PRODUCTS </h1>
+
+<buttom class="button2" style="position: absolute; left: 400px; top: 17px" asp-action="Create"> Create New </buttom>
+
+<table class="Table4" style="position: absolute; left: 80px; top: 80px">
+    <thead>
+        <tr class="darkRow">
+            <th> Code </th>
+            <th> Name </th>
+            <th> Category </th>
+            <th> Price </th>
+            <th> Discount </th>
+            <th> Stock </th>
+            <th> Supplier </th>
+            <th> Cost </th>
+            <th> Action </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="lightRow">
+                <td> @Html.DisplayFor(modelItem => item.ProdCode) </td>
+                <td> @Html.DisplayFor(modelItem => item.ProdShort) </td>
+                <td> @Html.DisplayFor(modelItem => item.ProdCategory) </td>
+                <td> @Html.DisplayFor(modelItem => item.ProdRetail) </td>
+                <td> @Html.DisplayFor(modelItem => item.ProdDiscount) </td>
+                <td> @Html.DisplayFor(modelItem => item.ProdStock) </td>
+                <td> @Html.DisplayFor(modelItem => item.ProdSupplier) </td>
+                <td> @Html.DisplayFor(modelItem => item.ProdCost) </td>
+                <td>
+                    <buttom class="but-tab" asp-action="Create"> View </buttom>
+                    <buttom class="but-tab"> Update </buttom>
+                    <buttom class="but-tab"> Delete </buttom>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,45 @@
+﻿ @model IEnumerable<Customer>
+
+    @{
+        ViewData["Title"] = "Customer";
+    }
+
+    <h1 style="position: absolute; left: 80px; top: -25px"> CUSTOMERS </h1>
+
+    <buttom class="button2" style="position: absolute; left: 450px; top: 17px" asp-action="Create"> Create New </buttom>
+
+    <table class="Table4" style="position: absolute; left: 80px; top: 80px">
+        <thead>
+            <tr class="darkRow">
+                <th> Id </th>
+                <th> Name </th>
+                <th> Surname </th>
+                <th> Action </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in Model)
+            {
+                  <tr class="lightRow">
+                      <form method="get" asp-controller="Customer">
+
+                          <td>@c.CustId</td>
+                          <td>@c.CustFirstName</td>
+                          <td>@c.CustLastName</td>
+                          <td>
+
+                              <input type="hidden" name="custId" value="@c.CustId" />
+                              <button class="but-tab" asp-action="Customer" type="submit">View</button>
+
+                              <buttom class="but-tab"> Update </buttom>
+                              <buttom class="but-tab"> Delete </buttom>
+
+                          </td>
+
+                      </form>
+
+                  </tr>
+            }
+        </tbody>
+    </table>
+

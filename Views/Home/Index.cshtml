@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Cashier";
+}
+
+
+<table class="Table2" style="position: absolute; left: 60px; top: 20px">
+    <thead>
+        <tr class="darkRow">
+            <th><h2> Code </h2></th>
+            <th><h2> Name </h2></th>
+            <th><h2> Price </h2></th>
+            <th><h2> Discount </h2></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="lightRow">
+                <td> @Html.DisplayFor(modelItem => item.ProdCode) </td>
+                <td> @Html.DisplayFor(modelItem => item.ProdShort) </td>
+                <td> @Html.DisplayFor(modelItem => item.ProdRetail) </td>
+                <td> @Html.DisplayFor(modelItem => item.ProdDiscount) </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<table class="Table2" style="position: absolute; left: 60px; top: 470px">
+    <thead>
+        <tr class="darkRow">
+            <th> Sub-Total </th>
+            <th> Discount </th>
+            <th> Total </th>
+        </tr>
+        <tr class="lightRow">
+            <td><h2> $ 209.75 </h2></td>
+            <td><h2> $ 9.50 </h2></td>
+            <td><h2> $ 200.25 </h2></td>
+        </tr>
+    </thead>
+</table>
+
+<table>
+    <thead>
+        <tr style="position: absolute; left: 780px; top: 20px">
+            <th> <h3> Amount Tendered </h3> </th>
+        </tr>
+        <tr style="position: absolute; left: 825px; top: 110px">
+            <td> <h1> $ 200.25 </h1> </td>
+        </tr>
+        <tr style="position: absolute; left: 930px; top: 245px">
+            <td> Payment Method </td>
+        </tr>
+        <tr style="position: absolute; left: 780px; top: 280px">
+            <td class="button"> Credit Card </td>
+            <td class="button"> Debit Card </td>
+            <td class="button"> Cash </td>
+        </tr>
+        <tr style="position: absolute; left: 960px; top: 345px">
+            <td> Rapid Cash </td>
+        </tr>
+        <tr style="position: absolute; left: 790px; top: 380px">
+            <td class="button"> 5.00 </td>
+            <td class="button"> 10.00 </td>
+            <td class="button"> 20.00 </td>
+            <td class="button"> 50.00 </td>
+        </tr>
+</table>
+
+<table class="Table3" style="position: absolute; left: 750px; top: 472px">
+    <thead>
+        <tr class="darkRow">
+            <th> Customer </th>
+            <th> Name </th>
+            <th> E-Mail </th>
+        </tr>
+        <tr class="lightRow">
+            <td><h2> 99925 </h2></td>
+            <td> Charlie MacFarllen </td>
+            <td> macfarllen@gmail.com </td>
+        </tr>
+    </thead>
+</table>
+
